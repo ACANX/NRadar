@@ -1,4 +1,4 @@
-name: Get Hot News
+name: GNews
 
 on:
   schedule:
