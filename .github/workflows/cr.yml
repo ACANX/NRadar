@@ -38,10 +38,12 @@ on:
     - cron: "33 * * * *"
 
   workflow_dispatch:
-
-concurrency:
-  group: crawler-${{ github.ref_name }}
-  cancel-in-progress: true
+  pull_request:
+    types: [opened, synchronize]   # , reopened
+    
+# concurrency:
+#   group: crawler-${{ github.ref_name }}
+#   cancel-in-progress: true
 
 permissions:
   contents: read
