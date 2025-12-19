@@ -108,7 +108,7 @@ jobs:
         if: success()
         run: |
           echo "🎲 Traffic Control: Generating random delay..."
-          DELAY=$(( ( RANDOM % 300 )  + 1 ))
+          DELAY=$(( ( RANDOM % 10 )  + 1 ))
           echo "⏸️  Sleeping for ${DELAY} seconds to spread the load..."
           sleep ${DELAY}s
           echo "▶️  Delay finished. Starting crawler..."
