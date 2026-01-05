@@ -98,10 +98,16 @@ rss:
     # 自定义源示例
     - id: "flash-futu"
       name: "富途快讯"
-      url: "https://example.com/feed.xml"
+      url: "https://rss.aishort.top/?type=baidu"
       enabled: true
-      max_age_days: 0               # 示例：禁用过滤，推送所有文章
-
+      max_age_days: 0  # 示例：禁用过滤，推送所有文
+      
+      # 自定义源示例
+    - id: "flash-futu"
+      name: "国内应急新闻"
+      url: "https://rss.aishort.top/?type=cneb"
+      enabled: true
+      max_age_days: 0  # 示例：禁用过滤，推送所有文
 
 # ===============================================================
 # 4. 报告模式
@@ -164,7 +170,7 @@ notification:
   #       如果想要精准的定时推送，建议使用 Docker 部署在个人服务器上
   push_window:
     enabled: true                    # 是否启用推送时间窗口控制
-    start: "22:00"                    # 开始时间（北京时间）
+    start: "00:00"                    # 开始时间（北京时间）
     end: "23:59"                      # 结束时间（北京时间）
     once_per_day: false                # true=窗口内只推送一次，false=窗口内每次执行都推送
 
