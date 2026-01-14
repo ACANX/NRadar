@@ -109,6 +109,11 @@ rss:
       enabled: true
       max_age_days: 0  # 示例：禁用过滤，推送所有文
 
+    - id: "ithome"
+      name: "IT之家"
+      url: "https://www.ithome.com/rss/"
+      enabled: false                  # 禁用
+      
 # ===============================================================
 # 4. 报告模式
 #
